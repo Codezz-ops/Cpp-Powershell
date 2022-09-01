@@ -1,5 +1,5 @@
 /*Includes*/
-#include "../../PowerShell/src/headers/functions.hpp"
+#include "../../../src/main/headers/functions.hpp"
 
 /*Main Function*/
 int main(){
