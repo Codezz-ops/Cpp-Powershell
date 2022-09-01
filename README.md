@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img src="https://static.thenounproject.com/attribution/4566767-600.png" width="150px"><br>
+    <img src="https://static.thenounproject.com/png/4566767-200.png" width="150px"><br>
         C++ PowerShell
         <br>PowerShell recoded in C++.</br>
 </h1>
