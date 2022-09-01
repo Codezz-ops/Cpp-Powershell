@@ -1,0 +1,31 @@
+Get-Help - shows Item help menu.
+
+Get-Help-h - Shows More help menu
+
+Make-Item--help - shows make-item help.
+
+Remove-Item--help - shows remove-item help.
+
+Set-Location - changes to specified directory.
+
+Clear-Host - clears screen
+
+Get-Location - shows current working directory
+
+ls/dir - shows files in current directory.
+
+exit - exits powershell
+
+Create-File - makes file.
+
+Make-Item - makes directory.
+
+Make-Item--verbose - shows making directory
+
+Make-Item--version - shows version.
+
+Remove-Item - removes directory.
+
+Remove-Item--verbose - shows removing directory.
+
+Remove-Item--version - shows version.
