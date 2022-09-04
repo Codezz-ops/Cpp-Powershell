@@ -4,10 +4,12 @@
         <br>PowerShell recoded in C++.</br>
 </h1>
 
-### HOW TO RUN
+### HOW TO BUILD
 - cd build 
 - cmake .. 
 - make
+
+### HOW TO RUN
 - ./pwsh
 
 ### FAQ
