@@ -9,7 +9,8 @@
 #include <filesystem>
 using namespace std;
 
-string Filename, Dirname, sDirertory, commands;
+string Filename, Dirname, sDirertory;
+string commands = "";
 fstream File;
 
 void welcome(){
@@ -48,12 +49,12 @@ void morecommands()
     cout << "  ESC-}  ^RightArrow   Right to last column displayed." << endl;
     cout << "  ESC-{  ^LeftArrow    Left  to first column." << endl;
     cout << "  F                    Forward forever; like 'tail -f'." << endl;
-    cout << "  ESC-F                Like F but stop when search pattern is found." << endl;
+    cout << "  ESC-F                Like F but stop when search pattern is found.\n\n" << endl;
 }
 
 void GetHelpRemove(){
-    cout << "Name                              Category  Module                    Synopsis" << endl;
-    cout << "----                              --------  ------                    --------" << endl;
+    cout << "\e[0;32mName                              Category  Module                    Synopsis\e[0;37m" << endl;
+    cout << "\e[0;32m----                              --------  ------                    --------\e[0;37m" << endl;
     cout << "Remove-Job                        Cmdlet    Microsoft.PowerShell.Core …"  << endl;
     cout << "Remove-Module                     Cmdlet    Microsoft.PowerShell.Core …" << endl;
     cout << "Remove-PSSession                  Cmdlet    Microsoft.PowerShell.Core …" << endl;
