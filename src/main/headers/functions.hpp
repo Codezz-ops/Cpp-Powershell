@@ -1,28 +1,15 @@
-#include <stdio.h>
-#include <iostream>
-#include <unistd.h>
-#include <string.h>
-#include <stdlib.h>
-#include <fstream>
-#include <sys/types.h>
-#include <sys/stat.h>
-#include <filesystem>
 using namespace std;
 
-string Filename, Dirname, sDirertory;
-string commands = "";
-fstream File;
+void clears()
+{
+    cout << "\x1B[2J\x1B[H";
+}
 
 void welcome(){
     cout << "PowerShell " << __VERSION__"(Beta)" << endl;
     cout << "Copyright (c) Microsoft Corporation.\n" << endl;
     cout << "https://aka.ms/powershell" << endl;
     cout << "Type 'help' to get help.\n" << endl;
-}
-
-void clears()
-{
-    cout << "\x1B[2J\x1B[H";
 }
 
 void morecommands()
@@ -142,7 +129,7 @@ void help()
             cout << "   functions, and scripts.\n" << endl;
             cout << " ONLINE HELP" << endl;
             cout << "   You can find help for PowerShell onlie at" << endl;
-            cout << "   https://go.microsoft.com/fwlink.?LinkID=108518.\n" << endl; 
+            cout << "   https://go.microsoft.com/fwlink.?LinkID=108518.\n" << endl;
             cout << "   To open online help for any cmdlets or function, type:\n" << endl;
             cout << "       Get-Help <cmdlet-name> -Online" << endl;
             cout << " UPDATE-HELP" << endl;
@@ -179,7 +166,7 @@ void help()
             cout << "                        them on a file share.\n" << endl;
             cout << "   Update-Help        : Downloads and installs help files from the" << endl;
             cout << "                        internet or a file share.\n" << endl;
-            cout << "   Get-Help Get-Process : Displays help about the Get-Process cmdlet.\n" << endl; 
+            cout << "   Get-Help Get-Process : Displays help about the Get-Process cmdlet.\n" << endl;
             cout << "   Get-Help Get-Process -Online" << endl;
             cout << "                           : Opens online help for the Get-Process cmdlet.\n" << endl;
             cout << "   Help Get-Process        : Displays help about Get-Process one page at a" << endl;
