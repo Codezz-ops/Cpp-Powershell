@@ -1,8 +1,24 @@
+/* Modules */
+#include <stdio.h>
+#include <fstream>
+#include <unistd.h>
+#include <string.h>
+#include <stdlib.h>
+#include <iostream>
+#include <sys/stat.h>
+#include <filesystem>
+#include <sys/types.h>
+
 /*Includes*/
 #include "../../../PowerShell/src/main/headers/functions.hpp"
 
 /*Main Function*/
-int main(){
+int main()
+{
+    int errorCode;
+    string Filename, Dirname, sDirertory;
+    string commands = "";
+    fstream File;
     welcome();
 
     while (true)
@@ -85,17 +101,17 @@ int main(){
         {
             clears();
         }
-        else if (commands == "ls" || "dir")
+        else if (commands == "ls" || commands == "dir")
         {
             system(commands.c_str());
-        }
-        if (commands == "exit")
+        } else if (commands == "exit")
         {
             exit(0);
-        }
-        else if (commands == "Get-Help h")
+        } else if (commands == "Get-Help -h")
         {
             morecommands();
+        } else {
+            cout << commands << ": The term '" << commands << "'" << " is not recognized as a name of a cmdlet, function, script file, or executable program." << endl;
         }
     }
     return 0;
