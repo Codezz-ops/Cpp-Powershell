@@ -12,6 +12,34 @@ void welcome(){
     cout << "Type 'help' to get help.\n" << endl;
 }
 
+void evenmorecommands()
+{
+    cout << "NAME\n" << endl;
+    cout << "   Get-ExecutionPolicy\n" << endl;
+    cout << "SYNTAX\n" << endl;
+    cout << "   Get-ExecutionPolicy [[-Scope] {Process | CurrentUser | LocalMachine | " << endl;
+    cout << "   UserPolicy | MachinePolicy}] [-List] [<CommonParameters>]\n\n" << endl;
+    cout << "PARAMETERS\n" << endl;
+    cout << "    -List\n" << endl;
+    cout << "    -Scope <ExecutionPolicyScope>\n" << endl;
+    cout << "    <CommonParameters>" << endl;
+    cout << "        This cmdlet supports the common parameters: Verbose, Debug," << endl;
+    cout << "        ErrorAction, ErrorVariable, WarningAction, WarningVariable," << endl;
+    cout << "        OutBuffer, PipelineVariable, and OutVariable. For more information, see" << endl;
+    cout << "        about_CommonParameters " << endl;
+    cout << "    (https://go.microsoft.com/fwlink/?LinkID=113216).\n\n" << endl;
+    cout << "ALIASES" << endl;
+    cout << "    None\n\n" << endl;
+    cout << "REMARKS" << endl;
+    cout << "    Get-Help cannot find the Help files for this cmdlet on this computer. It " << endl;
+    cout << "    is displaying only partial help." << endl;
+    cout << "        -- To download and install Help files for the module that includes " << endl;
+    cout << "    this cmdlet, use Update-Help." << endl;
+    cout << "        -- To view the Help topic for this cmdlet online, type: 'Get-Help'" << endl;
+    cout << "    Get-ExecutionPolicy -Online' or'" << endl;
+    cout << "           go to https://go.microsoft.com/fwlink/?LinkID=2096594.\n\n" << endl;
+}
+
 void morecommands()
 {
     cout << "SUMMARY OF LESS COMMAND\n\n" << endl;
