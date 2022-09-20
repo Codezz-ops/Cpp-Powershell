@@ -110,8 +110,13 @@ int main()
         } else if (commands == "Get-Help -h")
         {
             morecommands();
-        } else {
+        } else if (commands == "Get-Help -Name Get-ExecutionPolicy -Detailed")
+        {
+            evenmorecommands();
+        }
+        else {
             cout << commands << ": The term '" << commands << "'" << " is not recognized as a name of a cmdlet, function, script file, or executable program." << endl;
+            cout << "Check the spelling of the name, or if a path was included, verify that the path is correct and try again." << endl;
         }
     }
     return 0;
